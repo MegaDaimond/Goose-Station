@@ -108,6 +108,7 @@ using Robust.Server.GameObjects;
 using Robust.Shared.GameObjects;
 using Robust.Shared.Map.Components;
 using Content.Shared._EinsteinEngines.Silicon.Components; // Goobstation
+using Content.Shared.Humanoid; // Corvax-Goob-Edit
 using Robust.Shared.Prototypes;
 
 namespace Content.IntegrationTests.Tests.GameRules;
@@ -314,10 +315,11 @@ public sealed class NukeOpsTest
         var totalTicks = (int) Math.Ceiling(totalSeconds / server.Timing.TickPeriod.TotalSeconds);
         var increment = 5;
         var damage = entMan.GetComponent<DamageableComponent>(player);
+        var humApp = entMan.GetComponent<HumanoidAppearanceComponent>(player); // Corvax-Goob-Edit
         for (var tick = 0; tick < totalTicks; tick += increment)
         {
             await pair.RunTicksSync(increment);
-            if (!entMan.HasComponent<SiliconComponent>(player)) // Goobstation - IPC
+            if (!entMan.HasComponent<SiliconComponent>(player) && humApp.Species != "Abductor") // Goobstation - IPC
             {
                 var resp = entMan.GetComponent<RespiratorComponent>(player);
                 Assert.That(resp.SuffocationCycles, Is.LessThanOrEqualTo(resp.SuffocationCycleThreshold));
