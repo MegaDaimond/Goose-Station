@@ -1,0 +1,17 @@
+- type: entity
+  parent: ClothingBackpackDuffel
+  id: LPPClothingBackpackDuffelContractor
+  name: contractor duffel bag
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Back/Duffels/integduffel.rsi
+  - type: Storage
+    grid:
+    - 0,0,10,4
+  - type: ClothingSpeedModifier
+    walkModifier: 1.0
+    sprintModifier: 1.0
+  - type: StaticPrice
+    price: 150
+    vendPrice: 19500
