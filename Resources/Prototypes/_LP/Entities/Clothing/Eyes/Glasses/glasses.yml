@@ -51,7 +51,7 @@
   - type: FlashImmunity
 
 - type: entity
-  parent: [ClothingEyesBase, LPPShowSecurityIcons]
+  parent: [ClothingEyesBase, ShowSecurityIcons]
   id: LPPClothingEyesGlassesAviatorNPZ
   name: NPZ aviators
   description: Only for the most coolest guys in this sector.
