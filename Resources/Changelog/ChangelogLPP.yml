@@ -70,3 +70,14 @@ Entries:
   id: 5615
   time: '2026-01-23T15:45:05.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Goob-Station/pull/20
+- author: Wordik156
+  changes:
+    - type: Add
+      message: Добавлены новые (4) цели станции для увеличения вариативности смен
+    - type: Tweak
+      message: >-
+        Обновлён пул целей для карт Астра, Дельта, Гласир, Пакет, Пёрл,
+        Пилигрим, Силли.
+  id: 5616
+  time: '2026-01-23T17:02:29.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Goob-Station/pull/21
