@@ -18,10 +18,8 @@ job-name-exec = служебный доступ
 # Navy Stuff
 
 job-name-navy-officer = офицер ЦК
-job-name-navyofficer = офицер ЦК
 job-name-navy-captain = капитан ВКФ
 job-name-navy-officer-undercover = офицер под прикрытием
-job-name-navycaptain = капитан ВКФ
 job-name-diplomat = дипломат NanoTrasen
 job-name-inspector = инспектор ЦК
 job-name-nct = наставник ЦК
